@@ -2,6 +2,8 @@ JavaGames
 =========
 
 Small games recreated in Java, may not work fully but main idea works. 
+These games can all be ran using a simple java compiler and running from the command
+prompt.
 
 I am a 3rd year student studying computer science.
 
