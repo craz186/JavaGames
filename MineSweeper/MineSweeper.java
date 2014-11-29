@@ -1,11 +1,6 @@
 /*Notes:
 *
-* Reduce code down to one class preferrably block.
-*
-* Make an image handling method. 
-*
 * Change font colours and add buttons to retry and change difficulty in future.
-*
 */
 import java.util.*;
 import java.awt.*;
@@ -14,7 +9,6 @@ import javax.swing.*;
 
 class MineSweeper extends JFrame
 {
-	
 	private int clicks=0;
 	private int totalRows= 20;
 	private int totalCols= 30;
@@ -33,6 +27,8 @@ class MineSweeper extends JFrame
 	MineSweeper()
 	{
 		super("MineSweeper");
+		JOptionPane.getInputDialog(null,"You hit a mine hard luck.");
+		
 		setLayout(new GridLayout(totalRows,totalCols)); 
 		setSize(1300,700);
 		for (int i=0; i<totalRows; i++) {	// add button i
@@ -50,10 +46,9 @@ class MineSweeper extends JFrame
 		for(int i=0; i<mines;i++)//Need to make unique locations later.
 		{
 			randI=r.nextInt(totalRows);
-			randJ=r.nextInt(totalCols);
+			randJ=r.nextInt(totalCols); 
 			if(grid[randI][randJ].setMine())
 				continue;
-			
 		}
 		setVisible(true);
 		setResizable(false);
@@ -77,7 +72,7 @@ class MineSweeper extends JFrame
 		}  
 		public boolean setMine()
 		{
-			//grid[row][column].setIcon(image);
+			grid[row][column].setIcon(image);
 			
 			if(mine)
 				return false;
