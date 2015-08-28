@@ -1,4 +1,4 @@
-package chessmate;
+package com.gibbons.chessmate.model;
 /*
  * Node class is used to hold a tile with the value given by the minimax
  * evaluation 

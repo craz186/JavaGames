@@ -1,4 +1,4 @@
-package chessmate;
+package com.gibbons.chessmate.controller;
 import java.util.*;
 /*	
 * AI class reponds to users moves and moves each AI piece according to the

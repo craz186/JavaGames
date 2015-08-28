@@ -1,4 +1,5 @@
-package chessmate;
+package com.gibbons.chessmate.controller;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;

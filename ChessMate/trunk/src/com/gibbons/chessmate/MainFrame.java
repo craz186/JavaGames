@@ -1,9 +1,11 @@
 /* This is the level select JFrame class created using netbeans.
  * 
  */
-package chessmate;
+package com.gibbons.chessmate;
+
 import java.awt.Container;
 import javax.swing.*;
+
 public class MainFrame extends JFrame{
 
     Container contain = new Container();

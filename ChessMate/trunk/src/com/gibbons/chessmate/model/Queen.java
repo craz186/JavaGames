@@ -1,4 +1,4 @@
-package chessmate;
+package com.gibbons.chessmate.model;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;

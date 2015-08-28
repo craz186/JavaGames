@@ -1,4 +1,5 @@
-package chessmate;
+package com.gibbons.chessmate.model;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
