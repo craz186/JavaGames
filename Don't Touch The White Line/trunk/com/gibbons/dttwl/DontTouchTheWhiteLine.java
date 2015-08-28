@@ -1,16 +1,18 @@
+package com.gibbons.dttwl;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-class TouchTheWhiteLine extends JFrame
+class DontTouchTheWhiteLine extends JFrame
 {
 	private Block[][] buttons= new Block[4][4];
 	private int count=0;
 	boolean startTimer= true;
 	long time1=0;
 	long time2=0;
-	TouchTheWhiteLine()
+	DontTouchTheWhiteLine()
 	{
 		super("Don't Touch The White Line");
 		setLayout(new GridLayout(4,4)); 
@@ -138,6 +140,6 @@ class TouchTheWhiteLine extends JFrame
 	}
 	public static void main(String[] args)
 	{
-		new TouchTheWhiteLine();
+		new DontTouchTheWhiteLine();
 	}
 }
