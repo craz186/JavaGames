@@ -1,11 +1,13 @@
 JavaGames
 =========
 
-Small games recreated in Java.
+Small/Medium games recreated in Java.
 These games can all be ran using a simple java compiler and running from the command
 prompt.
 
-I am a 3rd year student studying computer science.
+As of 28/08/15 I am working on revamping my older projects to make them more maintainable and finishing off some old projects that I just never got the time to finish.
+
+I am a 4th year student studying computer science.
 
 Feel free to re-use any code in this repository.
 These games are just for fun and are my interpretation of how these games were made.
