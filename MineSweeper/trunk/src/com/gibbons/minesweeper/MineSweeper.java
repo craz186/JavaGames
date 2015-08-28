@@ -2,6 +2,9 @@
 *
 * Change font colours and add buttons to retry and change difficulty in future.
 */
+
+package com.gibbons.minesweeper;
+
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -16,8 +19,8 @@ class MineSweeper extends JFrame
 	private int total= totalRows*totalCols;
 	private int mines= 50;
 	//Scales image to size;
-	ImageIcon image1 = new ImageIcon("mine.ico");
-	ImageIcon image2 = new ImageIcon("flag_red.ico");
+    ImageIcon image1 = new ImageIcon(ImageIO.read(this.class.getClassLoader().getResourceAsStream("res/mine.ico"));
+	ImageIcon image2 = new ImageIcon(ImageIO.read(this.class.getClassLoader().getResourceAsStream("res/flag_red.ico"));
 	Image img = image1.getImage();  
 	Image img2 = image2.getImage();  
 	Image newimg = img.getScaledInstance(25, 25,  java.awt.Image.SCALE_SMOOTH);  
