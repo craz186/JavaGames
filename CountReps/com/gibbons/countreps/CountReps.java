@@ -1,3 +1,5 @@
+package com.gibbons.countreps;
+
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -40,7 +42,6 @@ class CountReps extends JPanel implements KeyListener
 		CountReps cp= new CountReps();
 		jf.add(cp);
 		jf.setVisible(true);
-		//jf.setSize(100,100);
 		jf.addKeyListener(cp);
 	}
 }
