@@ -7,9 +7,6 @@ import static com.gibbons.simulator.SimulatorConstants.WIDTH;
 import static com.gibbons.simulator.SimulatorConstants.debug;
 import static com.gibbons.simulator.objects.InhabitantType.BEAR;
 
-/**
- * Created by sgib0001 on 07/08/15.
- */
 public class Bear extends Inhabitant {
 
     private Color c = Color.BLACK;

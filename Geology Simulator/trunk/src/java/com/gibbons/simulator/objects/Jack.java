@@ -10,6 +10,7 @@ import static com.gibbons.simulator.objects.InhabitantType.JACK;
 public class Jack extends Inhabitant {
     private Color c= Color.RED;
     private Tree t;
+    boolean hasTree = false;
 
     Jack(int x,int y) {
         this.type = JACK;

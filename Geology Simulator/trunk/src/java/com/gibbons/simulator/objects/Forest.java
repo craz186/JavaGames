@@ -40,7 +40,7 @@ public class Forest {
                 Inhabitant currentInhabitant = inhabitants[i][j];
                 Tree currentTree = null;
 
-                if(currentInhabitant.getClass().equals(Tree.class)) {
+                if(currentInhabitant.getType().equals(TREE)) {
                     currentTree = (Tree)currentInhabitant;
                 }
 
@@ -130,12 +130,12 @@ public class Forest {
             }
         }
 
-        for(int i=0; i<tempJacks.size();i++) {
-            moveJack(tempJacks.get(i));
+        for (Point tempJack : tempJacks) {
+            moveJack(tempJack);
         }
 
-        for(int i=0; i<tempBears.size();i++) {
-            moveBear(tempBears.get(i));
+        for (Point tempBear : tempBears) {
+            moveBear(tempBear);
         }
 
     }
@@ -158,13 +158,33 @@ public class Forest {
             if(inhabitants[x0][y0]!=null && inhabitants[x0][y0].getType().equals(JACK)) {
                 System.out.println("A LumberJack was killed");
                 numJacks--;
-                inhabitants[x0][y0]=null;
-                inhabitants[x0][y0]=new Bear(x0,y0);
-                inhabitants[x][y]=null;
+
+                if(inhabitants[x0][y0].hasTree() != null) {
+                    Tree tempTree = inhabitants[x0][y0].hasTree;
+                    inhabitants[x0][y0] = new Bear(x0,y0);
+                    inhabitants[x0][y0].setTree(tempTree);
+                }
+                else {
+                    inhabitants[x0][y0]=null;
+                }
+
+                if(inhabitants[x][y].hasTree() != null) {
+                    inhabitants[x][y] = new Tree(x,y);
+                }
                 return;
             }
+
+            if(inhabitants[x][y].hasTree() != null && !inhabitants[x][y].hasTree().sapling()) {
+                inhabitants[x][y] = new Tree(x,y);
+            }
+            else if(inhabitants[x][y].hasTree().sapling()) {
+                inhabitants[x][y] = Tree.makeSapling(x,y);
+            }
+            else {
+                inhabitants[x][y]=null;
+            }
             inhabitants[x0][y0]=new Bear(x0,y0);
-            inhabitants[x][y]=null;
+
             x=x0;
             y=y0;
             i++;
@@ -174,9 +194,9 @@ public class Forest {
         int x = p.x;
         int y = p.y;
         int i=0;
-        int temp=0;
-        int x0=0;
-        int y0=0;
+        int temp;
+        int x0;
+        int y0;
         int count=0;
         Random r= new Random();
         while(i<3) {
@@ -189,12 +209,21 @@ public class Forest {
             if(inhabitants[x0][y0] != null) {
                 InhabitantType type = inhabitants[x0][y0].getType();
                 if (type.equals(BEAR)) {
-                    inhabitants[x][y] = null;
+                    if(inhabitants[x][y].hasTree() != null && !inhabitants[x][y].hasTree().sapling()) {
+
+                        inhabitants[x][y] = new Tree(x, y);
+                    }
+                    else if(inhabitants[x][y].hasTree().sapling()) {
+                        inhabitants[x][y] = Tree.makeSapling(x,y);
+                    }
+                    else {
+                        inhabitants[x][y] = null;
+                    }
                     System.out.println(".. A LumberJack was killed");
                     numJacks--;
                     return;
                 } else if (type.equals(JACK)) {
-                    if (count == 2)
+                    if (count == 2) //bad code
                         return;
                     count++;
                     continue;
@@ -204,15 +233,21 @@ public class Forest {
                         inhabitants[x0][y0] = null;
                         timber++;
                         numTrees--;
-                        inhabitants[x0][y0] = new Jack(x0, y0);
+                         inhabitants[x0][y0] = new Jack(x0, y0);
                         inhabitants[x][y] = null;
                         System.out.println("A tree was chopped down");
                         return;
                     }
                 }
             }
+            if(inhabitants[x][y].hasTree() != null) {
+                inhabitants[x][y] = new Tree(x,y);
+            }
+            else {
+                inhabitants[x][y]=null;
+            }
             inhabitants[x0][y0]=new Jack(x0,y0);
-            inhabitants[x][y]=null;
+
             x=x0;
             y=y0;
             i++;

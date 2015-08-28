@@ -13,8 +13,6 @@ public class Tree extends Inhabitant
     int age = 12;
     private Color c = Color.GREEN;
     private Color s = Color.BLUE;
-    private Jack occupiedJack;
-    private Bear occupied;
 
     Tree(int x,int y)
     {
@@ -67,7 +65,13 @@ public class Tree extends Inhabitant
     }
 
     @Override
+    public Tree hasTree() {
+        return this;
+    }
+
+    @Override
     public String toString() {
         return "";
     }
+
 }

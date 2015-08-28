@@ -1,0 +1,49 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Installations/groovy/doc/html/api" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/tck/src" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/main" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/spec/test" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/test" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/examples" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/src/test-resources" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/buildSrc/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/benchmark/bench" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-ant/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-ant/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-ant/src/test-resources" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-bsf/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-bsf/src/spec/test" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-bsf/src/test/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jmx/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jmx/src/test/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jmx/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-nio/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-sql/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-xml/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-xml/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-json/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-test/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-test/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-swing/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-swing/src/main/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-swing/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jsr223/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jsr223/src/spec/test" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-jsr223/src/test/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-testng/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-console/src/main/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-servlet/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-servlet/src/test/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-groovydoc/src/main/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-groovydoc/src/test/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-templates/src/main/groovy" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-templates/src/test/java" />
+      <root url="file://$USER_HOME$/Installations/groovy/src/subprojects/groovy-templates/src/test/groovy" />
+    </SOURCES>
+  </library>
+</component>

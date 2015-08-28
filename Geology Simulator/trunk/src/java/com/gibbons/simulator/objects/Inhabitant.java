@@ -9,6 +9,7 @@ public abstract class Inhabitant {
 
     int x,y;
     InhabitantType type;
+    public Tree hasTree;
 
 
     public InhabitantType getType() {
@@ -16,4 +17,12 @@ public abstract class Inhabitant {
     }
 
     public abstract void draw(Graphics g);
+
+    public Tree hasTree() {
+        return hasTree;
+    }
+
+    public void setTree(Tree hasTree) {
+        this.hasTree = hasTree;
+    }
 }
